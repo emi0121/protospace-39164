@@ -21,8 +21,6 @@ class PrototypesController < ApplicationController
   end
 
   def show
-    @prototype = Prototype.find(params[:id])
-    @image_attached = @prototype.image.attached?
     @comment = Comment.new
     @comments = @prototype.comments
   end
